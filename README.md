@@ -4,9 +4,9 @@ Session-Nodejs
 Handling using Nodejs & Express 4
 -------------------------------
 
-``` Technology Used: node.js, express, Jade template engine bootstrap ```
+``` Technology Used: node.js, express, Jade template engine, bootstrap ```
 
-Goto project directory and run below command  foe installing dependencies
+Goto project directory and run below command  for installing dependencies
 
 ``` npm install ```
 
