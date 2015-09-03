@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Session Handling using Nodejs & Express 4
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+  body
+    .panel.panel-primary(style='width:50%;margin:0 auto; margin-top:10%')
+      .panel-heading
+        h3 Session Handling using Nodejs & Express 4
+      .panel-body(style='height:40%; text-align:center;')
+        p#msg.bg-info
+        form#emailForm.form-horizontal(role='form', method='post')
+          .form-group
+            label.control-label.col-sm-2(for='name') Name:
+            .col-sm-10
+             if(!name)
+              input.form-control(type='text', name='name', placeholder='Enter name', required='required')
+             else
+               h4 #{name}
+          .form-group
+            label.control-label.col-sm-2(for='email') Email:
+            .col-sm-10
+             if(!email)
+              input.form-control(type='email', name='email', placeholder='Enter email', required='required')
+             else
+               h4 #{email}
+          .form-group
+            .col-sm-offset-2.col-sm-10
+             if(!name && !email)
+              button#send.btn.btn-primary.btn-lg(type='submit')
+                |  Create Session
+             else
+               a(href="/destroy" class="btn btn-primary btn-lg") 
+                   span Destroy Session  
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')

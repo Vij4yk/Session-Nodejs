@@ -1,0 +1,11 @@
+{
+  "name": "NodeJs-Session",
+  "version": "0.0.1",
+  "description": "Session Handling using Nodejs & Express",
+  "dependencies": {
+    "body-parser": "~1.13.1",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "jade": "^1.11.0"
+  }
+}
