@@ -1,7 +1,7 @@
 Session-Nodejs
 ========
 
-Handling using Nodejs & Express 4
+Session Handling using Nodejs & Express 4
 -------------------------------
 
 ``` Technology Used: node.js, express, Jade template engine, bootstrap ```
