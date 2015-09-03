@@ -1,5 +1,3 @@
-Session-Nodejs
-========
 
 Session Handling using Nodejs & Express 4
 -------------------------------
